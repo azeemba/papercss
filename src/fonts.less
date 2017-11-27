@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC');
+@import url('https://fonts.googleapis.com/css?family=Kalam|PT+Sans&style=latin');
 
-@global-font-size: 20px;
-@header-font: 'Patrick Hand SC'; 
-@body-font: 'Neucha';
+@global-font-size: 24px;
+@header-font: 'Kalam'; 
+@cursive-font: 'Kalam'; 
+@body-font: 'PT Sans';
 @font-color: @primary;
 
 html {
@@ -10,8 +11,11 @@ html {
     font-family: @body-font, sans-serif;
     color: @font-color;
 }
-p, a, button, table, thead, tbody, th, tr, td, input, select, option {
+p, table, tbody, th, tr, td, {
     font-family: @body-font, sans-serif;
+}
+a, button, thead, input, select, option {
+    font-family: @cursive-font, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: @header-font, sans-serif;

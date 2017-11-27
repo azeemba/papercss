@@ -1,18 +1,21 @@
 @large-screen: ~"screen and (max-width: 1200px)";
-@medium-screen: ~"screen and (max-width: 992px)";
-@small-screen: ~"screen and (max-width: 768px)";
-@xsmall-screen: ~"screen and (max-width: 480px)";
+@medium-screen: ~"screen and (max-width: 768px)";
+@small-screen: ~"screen and (max-width: 320px)";
+@xsmall-screen: ~"screen and (max-width: 200px)";
 
 .container {
-    width: 100%;
+    width: 80%;
     max-width: 960px;
     position: relative;
     margin: 0 auto;
-    @media @medium-screen {
-        width: 85%;
-    }
     @media @xsmall-screen {
-        width: 90%;
+        width: 100%;
+    }
+    @media @small-screen {
+        width: 100%;
+    }
+    @media @medium-screen {
+        width: 95%;
     }
 }
 .hr-after() {

@@ -21,7 +21,7 @@
 
 .generate-sm(@n, @i: 1) when (@i =< @n) {
     @percent: (@i * 100% / @n);
-    @media (min-width: 768px) {
+    @media (min-width: 320) {
         .sm-@{i} {
             .col-size(@percent);
         }
@@ -30,7 +30,7 @@
 }
 .generate-md(@n, @i: 1) when (@i =< @n) {
     @percent: (@i * 100% / @n);
-    @media (min-width: 992px) {
+    @media (min-width: 768) {
         .md-@{i} {
             .col-size(@percent);
         }
@@ -109,7 +109,7 @@
 }
 .col {
     padding: 1rem;
-    @media (max-width: 767px) {
+    @media (max-width: 319) {
         // Stack for mobile
         .col-size(100%);
     }
