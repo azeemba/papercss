@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Kalam|Exo+2&style=latin');
+@import url('https://fonts.googleapis.com/css?family=Kalam|Exo+2|Bitter&style=latin');
 
 @global-font-size: 24px;
-@header-font: 'Kalam'; 
+@header-font: 'Bitter'; 
 @cursive-font: 'Kalam'; 
 @body-font: 'Exo 2';
 @font-color: @primary;
@@ -14,11 +14,15 @@ html {
 p, table, tbody, th, tr, td, {
     font-family: @body-font, sans-serif;
 }
-a, button, thead, input, select, option {
+thead, input, select, option {
     font-family: @cursive-font, sans-serif;
 }
+button, .paper-btn, input[type="button"] {
+    font-family: @cursive-font, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: @header-font, sans-serif;
+    font-family: @header-font, serif;
     font-weight: normal;
 }
 h1 {
